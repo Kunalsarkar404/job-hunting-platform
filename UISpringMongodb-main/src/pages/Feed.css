@@ -1,0 +1,121 @@
+/* Feed.css */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+
+.feed-container {
+  padding: 20px;
+}
+
+.home-button {
+  margin-bottom: 20px;
+}
+
+.home-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-field {
+  flex: 1;
+  margin-right: 10px; /* Add margin-right to create space between the fields */
+}
+
+.exp-select {
+  width: 150px;
+  margin-right: 10px; /* Add margin-right to create space between the dropdown and button */
+}
+
+.search-button {
+  background-color: #1976d2;
+  color: white;
+}
+
+.search-button:hover {
+  background-color: #115293;
+}
+
+.post-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+}
+
+.post-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+
+.post-description {
+  color: #585858;
+  margin-top: 1%;
+}
+
+.post-exp {
+  margin-top: 1%;
+  font-weight: 500;
+}
+
+.post-skills-title {
+  margin-top: 2%;
+  font-weight: 500;
+}
+
+.post-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.post-skill {
+  background-color: #f0f0f0;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  .search-box {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-field,
+  .search-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .search-button {
+    margin-bottom: 0;
+  }
+
+  .post-card {
+    padding: 15px;
+  }
+
+  .post-title {
+    font-size: 1.2rem;
+  }
+}

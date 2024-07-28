@@ -1,0 +1,74 @@
+/* Create.css */
+.create-container {
+  max-width: 600px;
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.create-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #1976d2;
+  font-weight: bold;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+}
+
+.input-field {
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-field:focus-within {
+  border-color: #1976d2;
+  box-shadow: 0 0 5px rgba(25, 118, 210, 0.5);
+}
+
+.submit-button {
+  background-color: #1976d2;
+  color: #fff;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #1565c0;
+  transform: scale(1.05);
+}
+
+.snackbar {
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.snackbar .MuiSnackbarContent-root {
+  border-radius: 8px;
+  background-color: #1976d2;
+}
+
+.snackbar .MuiAlert-root {
+  border-radius: 8px;
+  background-color: #1976d2;
+}
+
+.snackbar .MuiAlert-root.MuiAlert-standardSuccess {
+  background-color: #388e3c;
+}
+
+.snackbar .MuiAlert-root.MuiAlert-standardError {
+  background-color: #d32f2f;
+}

@@ -1,0 +1,31 @@
+/* App.css */
+.home-container {
+    text-align: center;
+    padding: 5% 0;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    margin-top: 40px;
+  }
+  
+  .ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .ul li {
+    display: inline-block;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
